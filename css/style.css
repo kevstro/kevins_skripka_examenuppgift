@@ -4,8 +4,6 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 50px;
     color: black;
-    
-   
 }
 
 p{
@@ -20,19 +18,7 @@ p{
 }
 
 #secret{
-    animation: rainbow-secret 5s linear infinite;
-}
-
-@keyframes rainbow-secret{
-    0%   { color: purple; }
-    14%  { color: red; }
-    28%  { color: orange; }
-    42%  { color: yellow; }
-    56%  { color: green; }
-    70%  { color: blue; }
-    84%  { color: indigo; }
-    98%  { color: violet; }
-    100% { color: purple; }
+    animation: rainbow-text 5s linear infinite;
 }
 
 @keyframes rainbow-text{
@@ -49,7 +35,7 @@ p{
 
 body{
     background-color: lightgrey;
-    height: 1000px;
+    height: 800px;
 }
 div{
     width: 60px;
@@ -65,7 +51,6 @@ div{
 }
 
 .key, div[id]{
-    
     transition: background-color 1.4s ease-out;
 }
 
@@ -84,62 +69,38 @@ div[style*="background-color"]{
     margin-top: 50px;
     height: 15px;
 }
-.top_top_layer{
+
+.top_extra_layer, .top_top_layer, .top_layer, .middle_layer, .bottom_layer, .bottom_bottom_layer{
     display: flex;
     justify-content: center;
     width: 100%;
     border: none;
     color: white;
     border-radius: 8px;
+    align-items: center;
+    text-align: center;
+}
+.top_top_layer{ 
     transform: translateY(35px);
     gap: 5px;
 }
 .top_layer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border: none;
-    color: white;
-    border-radius: 8px;
     margin-top: 50px;
 }
 
 .middle_layer{
-    color: white;
-    display: flex;
-    justify-content:center ;
-    width: 100%;
-    border: none;
     margin-top: 20px;
-    align-items: center;
-    text-align: center;
-    
     transform: translateX(-28px);
     
 }
 
 .bottom_layer{
-    color: white;
-    display: flex;
-    justify-content: center;
-    width:100%;
     margin-top: 20px;
-    border: none;
-    align-items: center;
-    text-align: center;
-    transform: translateX(7px);
-    
+    transform: translateX(7.5px); 
 }
 
 .bottom_bottom_layer{
-    color: white;
-    display: flex;
-    justify-content: center;
-    width:100%;
     margin-top: 20px;
-    border: none;
-    align-items: center;
-    text-align: center;
     transform: translateX(65px);
 }
 
@@ -174,6 +135,7 @@ div[style*="background-color"]{
 
 #shiftH{
     width: 175px;
+    margin-right: 1px;
 }
 
 #backspace{
@@ -187,8 +149,9 @@ div[style*="background-color"]{
     
 }
 
+
 #spacebar{
-    width: 340px;
+    width: 343px;
 }
 
 #uparrow{
@@ -224,7 +187,7 @@ a{
     display: flex;
     margin: auto;
     width: fit-content;
-    text-decoration: none;
+    padding: 2px;
     border: solid black;
     border-radius: 4px;
     text-decoration: none;
